@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="icon" href="logo.png">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="margin-left: 50px;" href="index.html"><img src="logo.png" height="35px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<!-- class="row justify-content-center h-100"
+	class="card w-25 my-auto shadow" --><br><br><br><br><br>
+	<!--
+	<div class="card-header text-center bg-primary text-white" 
+				style="height: 35px;margin-top: 5px;border-radius: 5px;">
+					<h2 style="justify-content: center;display: flex;text-align: center;">Login form</h2>
+				</div> -->
+		<div class="container">
+		<div class="row col-md-6 col-md-offset-3">
+		<div class="panel panel-primary" style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);" style="border: 1px solid #5271ff;">
+			<div style="justify-content: center;display: flex;
+			background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);" class="panel-heading text-center">
+				
+					<h1 style="
+					border-radius: 2px;">Login</h1>
+				
+			</div>
+				<div class="panel-body">
+					<form action="login.php" name="login" method="post" onsubmit="return validation();">
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" class="form-control" name="email" />
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" id="password" class="form-control" name="password" />
+						</div>
+						<input type="submit" class="btn btn-primary w-100" value="Login" name="" style="background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);">
+					</form>
+				</div>
+			 <p>&nbsp;&nbsp;&nbsp;&nbsp;Don't have account? - <a href="register.html" style="color: darkblue;">Register</a></p>
+		</div>
+		</div>
+	</div>
+	
+</body>
+</html>

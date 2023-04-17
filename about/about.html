@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>AboutUS</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="../logo.png">
+    <link rel="stylesheet" href="a.css">
+
+    <style type="text/css">
+
+      .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*
+      ul li a:hover{
+  border: 1px solid black;
+  margin: 5px;
+  color: #ffde59;
+}*/
+
+ul li a {
+  margin-top: 9px;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-toggle{
+  margin-top: 15px;
+}
+
+@media (min-width: 767px){
+  .navbar-brand img{
+    justify-content: center;
+    display: flex;
+  }
+}
+nav{
+  text-align: center;
+}
+    </style>
+
+    <script type="text/javascript">
+      function toggleReadMore() {
+    var summary = document.getElementById("about-summary");
+    var readMoreButton = document.getElementById("read-more");
+    
+    if (summary.style.display === "none") {
+      summary.style.display = "block";
+      readMoreButton.innerHTML = "Read Less";
+    } else {
+      summary.style.display = "none";
+      readMoreButton.innerHTML = "Read More";
+    }
+  }
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<!-- style="border:1px solid black;" 
+ style="background-color:black;"
+ style="color: black;"   -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="margin-left: 50px;" href="../internshipoffer.html"><img src="../logo.png" height="35px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPLORE <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../explore/cloudcomputing.html">Cloud Computing</a></li>
+            <li><a href="../explore/ui-ux.html">UI/UX Design</a></li>
+            <li><a href="../explore/app.html">Mobile App Development</a></li>
+            <li><a href="../explore/dataanalysis.html">Web Development</a></li>
+            <li><a href="../explore/more.html">More ...</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../services/resume.html">Free Resume Sources</a></li>
+            <li><a href="../services/service.html">Interview Preparation</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="../index.html"><span class="glyphicon glyphicon-user"></span> LOGOUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br><br>
+    <div class="heading">       
+        <h1>About Us</h1>
+     <!-- <p>INTERN BOARD</p> -->
+    </div><br>
+    <section class="about" id="about">
+        <img src="about.webp">
+        <div class="container">
+          <h2>About Intern Board</h2>
+          <p>Welcome to Intern Board, the online platform connecting students and recent graduates with companies and organizations offering internship opportunities. Our mission is to help bridge the gap between education and employment by providing access to valuable work experience and networking opportunities for young professionals.</p>
+          <div id="about-summary" style="display: none;">
+            <h2>Our Story</h2>
+            <p>Intern Board was founded in 2023 by a group of former students who saw a need for a more streamlined and efficient way for students and companies to connect for internships. As recent graduates themselves, they understood the challenges of finding internships and gaining the experience necessary to kickstart their careers. They wanted to create a platform that would make the internship search process easier and more accessible for everyone.</p>
+            <h2>Our Team</h2>
+            <p>At Intern Board, we're passionate about helping students and recent graduates succeed. Our team is made up of experienced professionals from a variety of backgrounds, including recruitment, technology, and education. We work tirelessly to provide the best possible experience for both our student users and our company partners.</p>
+            <h2>Our Values</h2>
+            <p>At Intern Board, we believe in:
+              Providing equal opportunities for all students, regardless of background or experience level.
+              Supporting diversity and inclusion in the workplace.
+              Building strong relationships with our partner companies based on trust, transparency, and mutual benefit.
+              Creating a user-friendly and secure platform that prioritizes user privacy and data protection.</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions about Intern Board or our services, please don't hesitate to get in touch with us. You can reach us by email at mathanzzz777@gmail.com or by phone at (+91) 638-316-6943. We're always happy to hear from our users and partners!</p>
+            </div>
+          <button class="read-more" id="read-more" onclick="toggleReadMore()">Read More</button>
+        </div>
+      </section>
+      
+      <script src="a.js"></script>
+</body>
+</html>

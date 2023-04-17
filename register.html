@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="icon" href="logo.png">
+    <script type="text/javascript">
+    	function validation() {
+    		var fname = document.register.firstName.value;
+    		var lname = document.register.lastName.value;
+    		var sex = document.register.gender.value;
+    		var mail = document.register.email.value;
+    		var code = document.register.password.value;
+    		var phnum = document.register.number.value;
+
+    		if(fname==null || fname==""){
+    			alert("FirstName is Empty");
+    			return false;
+    		}
+    		else if(lname==null || lname==""){
+    			alert("LastName is Empty");
+    			return false;
+    		}
+    		else if(sex==null || sex==""){
+    			alert("Gender is Empty");
+    			return false;
+    		}
+    		else if(mail==null || mail==""){
+    			alert("Email is Empty");
+    			return false;
+    		}
+    		else if(code==null || code==""){
+    			alert("Password is Empty");
+    			return false;
+    		}
+    		else if(code.length<6){
+    			alert("Password must be 6 or more than 6 character and numbers");
+    			return false;
+    		}
+    		else if(phnum==null || phnum==""){
+    			alert("Phone number is Empty");
+    			return false;
+    		}
+    		else if(phnum.length<10){
+    			alert("Enter 10 numbers");
+    			return false;
+    		}
+    		else {
+    			alert("Register successful!");
+    		}
+    	}
+    </script>
+  </head>
+  <body>
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="margin-left: 50px;" href="index.html"><img src="logo.png" height="35px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <br><br><br><br><br>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary" style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);" style="border: 1px solid #5271ff;">
+          <div class="panel-heading text-center" style="background-color: #5271ff;background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);">
+            <h1>Sign Up</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" name="register" method="post" onsubmit="return validation();">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" style="background-color: #FFDE59;background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);" />
+            </form>
+          </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Already have account? - <a href="login.html" style="color: darkblue;">Login</a></p>
+        </div>
+      </div>
+    </div>
+    <!--<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded mr-2" alt="...">
+    <strong class="mr-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>-->
+  </body>
+</html>

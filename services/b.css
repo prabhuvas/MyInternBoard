@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+ /* #dee0e3 */
+}
+.d1{
+    text-align: center;
+    margin-top: 25px;
+}
+.d1 h1{
+    font-size: 50px;
+    color: #36455c;
+    margin-bottom: 10px;
+}
+.d1 p{
+    font-size: 20px;
+    color: #666;
+    margin: 50px;
+}
+.s1{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.s1 img{
+        flex:0 50%;
+        max-width: 50%;
+        height: auto;
+}
+.d2{
+    padding: 35px;
+}
+.d2 h2{
+    color: #36455c;
+    font-size: 24px;
+    margin:15px 80px;
+}
+.d2 p{
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+.read-more1{
+    display:inline-block;
+    color: #fff;
+    background-color: #0084ff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.read-more1:hover{
+    background-color: #006dd6;
+}
+.d11{
+    text-align: center;
+    margin-top: 25px;
+}
+.d2{
+    text-align: center;
+    margin-top: 25px;
+}
+.s2{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.s2 img{
+        flex:0 50%;
+        max-width: 50%;
+        height: auto;
+}
+.d3{
+    padding: 35px;
+}
+.d3 h2{
+    color: #36455c;
+    font-size: 24px;
+    margin:15px 80px;
+}
+.d3 p{
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+.read-more2{
+    display:inline-block;
+    color: #fff;
+    background-color: #0084ff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+.read-more2:hover{
+    background-color: #006dd6;
+}
+.d111{
+    text-align: center;
+    margin-top: 25px;
+}
+.d3{
+    text-align: center;
+    margin-top: 25px;
+}
+.s3{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.s3 img{
+        flex:0 50%;
+        max-width: 50%;
+        height: auto;
+}
+.d4{
+    padding: 35px;
+}
+.d4 h2{
+    color: #36455c;
+    font-size: 24px;
+    margin:15px 80px;
+}
+.d4 p{
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+.read-more3{
+    display:inline-block;
+    color: #fff;
+    background-color: #0084ff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+.read-more3:hover{
+    background-color: #006dd6;
+}
